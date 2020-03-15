@@ -12,6 +12,8 @@ require('dotenv').config();
 
 var app = express();
 
+//aqui es donde conectamos con la base de datos
+
 require('./db').connect();
 
 // view engine setup
