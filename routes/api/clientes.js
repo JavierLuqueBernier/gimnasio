@@ -7,3 +7,5 @@ router.get('/', async (req, res) => {
     const rows = await Cliente.getAll();
     res.json(rows);
 });
+
+module.exports = router;

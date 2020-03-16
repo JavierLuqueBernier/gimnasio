@@ -2,11 +2,11 @@ const mysql = require ('mysql')
 
 exports.connect=()=>{
     const pool= mysql.createPool({
-        host: DB_HOST,
-        user: DB_USER,
-        password: DB_PASSWORD,
-        port: DB_PORT,
-        database: DB_DATABASE,
+        host: process.env.DB_HOST,
+        user: process.env.DB_USER,
+        password: process.env.DB_PASSWORD,
+        port: process.env.DB_PORT,
+        database: process.env.DB_DATABASE,
         });
 
     global.db=pool;
